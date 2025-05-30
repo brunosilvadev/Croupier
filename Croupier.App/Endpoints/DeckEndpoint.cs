@@ -12,10 +12,10 @@ public class DeckEndpoint : IEndpoint
     }
     public void RegisterRoutes(IEndpointRouteBuilder app)
     {
-        app.MapGet("/new-game", NewSession);
-        app.MapGet("/draw-card", DrawCard);
-        app.MapGet("/see-deck", SeeDeck);
-        app.MapGet("/shuffle-deck", ShuffleDeck);
+        app.MapGet("/new-game/{numberOfDecks?}", (int? numberOfDecks) => NewSession(numberOfDecks));
+        app.MapGet("/draw-card/{sessionId}", (string sessionId) => DrawCard(sessionId));
+        app.MapGet("/see-deck/{sessionId}", (string sessionId) => SeeDeck(sessionId));
+        app.MapGet("/shuffle-deck/{sessionId}", (string sessionId) => ShuffleDeck(sessionId));
     }
 
     //TODO: add some asynchronicity to the application
