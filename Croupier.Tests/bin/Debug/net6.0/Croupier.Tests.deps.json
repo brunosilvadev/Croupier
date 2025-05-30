@@ -1695,7 +1695,7 @@
         "runtime": {
           "lib/netstandard2.0/xunit.abstractions.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "2.0.0.0"
           }
         },
         "compile": {
@@ -1761,7 +1761,10 @@
           "Swashbuckle.AspNetCore.SwaggerUI": "6.4.0"
         },
         "runtime": {
-          "Croupier.dll": {}
+          "Croupier.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Croupier.dll": {}
