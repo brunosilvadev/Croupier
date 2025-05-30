@@ -1,0 +1,10 @@
+# Ignore build output and user-specific files
+bin/
+obj/
+**/bin/
+**/obj/
+**/Debug/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
